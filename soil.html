@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/275eb03ef9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Soil</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+    background-color: #F1F2EA;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.top{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Paytone One";
+}
+.paytone-one-regular {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rufina-regular {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rufina-bold {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+
+.soil-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.soil-heading {
+    flex: 1;
+    font-size: 25px;
+    font-family: "Paytone One";
+    margin-bottom: 25px;
+}
+
+.soil-content {
+    flex: 2;
+    padding-left: 30px; 
+    font-size: 20px;
+    font-family: "Rufina";
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.gap{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .soil-container {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+    .soil-heading,
+    .soil-content {
+        flex: none; /* Remove flex to allow full width for smaller screens */
+    }
+    .soil-heading,
+    .soil-content {
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+footer p {
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover {
+    color: white;
+}
+footer a strong {
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="landing.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+    </div>
+
+    <div class="top">
+        <h1>All about Soil</h1>
+    </div>
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Alluvial Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Alluvial soil is one of the most fertile soil types in India, found mainly in the plains of the Indo-Gangetic region.
+                It is formed by the deposition of silt, clay, and sand carried by rivers, making it rich in minerals and nutrients.
+                Alluvial soil is excellent for growing a variety of crops such as rice, wheat, sugarcane, and pulses. It retains
+                 moisture well, making it suitable for irrigation.</p>
+
+        </div>
+    </div>
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>
+
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Black Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Black soil, also known as Regur soil or cotton soil, is characterized by its dark color and high clay content.
+                Found primarily in the Deccan Plateau region of India, it is known for its ability to retain moisture during dry seasons.
+                Black soil is suitable for growing crops like cotton, cereals, oilseeds, and pulses. However, proper drainage is 
+                essential to prevent waterlogging.</p>
+
+        </div>
+
+    </div>
+
+<div>
+    <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+
+</div>
+
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Red Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Red soil gets its color from the high iron oxide content and is prevalent in regions with tropical climates, such as 
+                parts of South India and eastern India.It is generally less fertile compared to alluvial and black soils, but it can  
+                be improved with proper soil management practices. Red soil is suitable for crops like millets, pulses, groundnuts, 
+                and tobacco. It requires regular irrigation due to low water retention capacity.</p>
+
+        </div>
+    </div>
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>
+    
+    
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Laterite Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Laterite soil is found in areas with high temperature and heavy rainfall, such as parts of Kerala, 
+                Karnataka, and Maharashtra. It is rich in iron oxide and aluminum but lacks fertility due to leaching caused 
+                by heavy rains. Laterite soil is suitable for crops like cashew nuts, tapioca, and rubber. However, it requires 
+                careful soil conservation measures to prevent erosion.</p>
+
+        </div>
+    </div>  
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>     
+
+            
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Arid and Desert Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Arid and desert soils are found in the western parts of India, particularly in Rajasthan and parts of Gujarat.
+                These soils are characterized by low organic matter content, high alkalinity, and poor water retention capacity.
+                Agriculture in these regions is challenging, but crops like millets, barley, pulses, and drought-resistant varieties 
+                can be cultivated with proper water management techniques.</p>
+
+        </div>
+    </div>
+
+<div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>
+
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Mountain or Forest Soil</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Mountain or forest soils are found in hilly and forested regions like the Himalayas and the Western Ghats.
+                These soils are generally acidic and rich in organic matter due to the decomposition of vegetation.
+                Agriculture in mountainous areas often involves terrace farming and cultivation of crops like tea, coffee, 
+                spices, and fruits such as apples and oranges.</p>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy Declared in the welfare of <strong> Farmers</strong> | <strong>Team o7</strong></p>
+    </footer>
+
+</body>
+</html>

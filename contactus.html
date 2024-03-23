@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Contact Section */
+        .contact {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact .heading {
+            color: #333;
+        }
+
+        .contact .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .contact .image {
+            flex: 1;
+            margin: 20px;
+        }
+
+        .contact .image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            flex: 1;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .contact form h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact form .box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact form .box textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact form .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .contact form .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .footer .box {
+            flex: 1;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .footer .box h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer .box p {
+            margin-bottom: 10px;
+        }
+
+        .footer .share {
+            margin-top: 10px;
+        }
+
+        .footer .share a {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+
+        .footer .share a:hover {
+            color: #ccc;
+        }
+
+        .footer .link {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer .link:hover {
+            color: #ccc;
+        }
+
+        .footer .credit {
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        .footer .credit span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact Us</h1>
+        <div class="row">
+            <div class="image">
+                <img src="./assets/online-advertising-agencies-500x500.webp" alt="">
+            </div>
+            <form action="">
+                <h3>Send us a message</h3>
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Phone Number" class="box">
+                <textarea placeholder="Message" class="box" cols="30" rows="10"></textarea>
+                <a href="#" class="btn">
+                    <span class="text text-1">Send Message</span>
+                    <span class="text text-2" aria-hidden="true">Send Message</span>
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Find us here</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact us</h3>
+                <p>9823072929</p>
+                <a href="#" class="link">quickaddakola2020@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Localization</h3>
+                <p>Near Oswal Bhavan, Dagdipul Road, Akola<br>
+                Maharashtra<br>
+                India </p>
+            </div>
+        </div>
+        <div class="credit">Created by <span>Krishna Vijaykumar Randad</span> | All rights are reserved!</div>
+    </section>
+
+    <script>
+        // JavaScript for toggling the login form
+        const loginBtn = document.getElementById('login-btn');
+        const loginForm = document.querySelector('.login-form');
+
+        loginBtn.addEventListener('click', () => {
+            loginForm.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+
+           

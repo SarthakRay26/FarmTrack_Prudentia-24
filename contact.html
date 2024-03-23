@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Add your cool styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            background-image: url('/bg-image3.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+            background-size: cover; /* Cover the entire body */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-position: center; /* Center the background image */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .heading {
+            text-align: center;
+            color:wheat;
+            margin-bottom: 30px;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image {
+            flex: 0 0 200px;
+            margin-right: 20px;
+        }
+        
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        form {
+            flex: 1;
+            max-width: 400px;
+            margin: 20px auto; /* Align form in the center horizontally */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .box textarea {
+            width: 100%;
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Add your cool styles here */
+        .footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 2px solid #fff;
+        }
+        
+        .footer .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer .box {
+            flex: 0 0 calc(33.333% - 20px);
+            margin: 10px;
+            text-align: left;
+        }
+        
+        .footer h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #ffc107;
+        }
+        
+        .footer p {
+            margin: 0;
+            color: #ccc;
+        }
+        
+        .footer .share a {
+            color: #ffc107;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer .share a:hover {
+            color: #fff;
+        }
+        
+        .credit {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1 class="heading">Contact Us</h1>
+            <div class="row">
+                <form action="#">
+                    <h3>Send us a Message</h3>
+                    <input type="text" placeholder="Your Name" class="box" required>
+                    <input type="email" placeholder="Your Email" class="box" required>
+                    <textarea placeholder="Your Message" class="box" cols="30" rows="6" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Find Us</h3>
+                    <div class="share">
+                        <ul>
+                            <li><a href="#" class="fab fa-facebook-f">Facebook</a></li>
+                            <li><a href="#" class="fab fa-twitter">Twitter</a></li>
+                            <li><a href="#" class="fab fa-instagram">Instagram</a></li>
+                            <li><a href="#" class="fab fa-linkedin">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <p>Phone: 9422860229<br>E-Mail: team072k23@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h3>Location</h3>
+                    <p>Men's Hostel, VIT Vellore<br>Tamil Nadu, India, 632014</p>
+                </div>
+            </div>
+            <div class="credit">Designed and Developed by <span>Team o7</span> | All rights reserved!</div>
+        </div>
+    </section>
+    <script>
+        // JavaScript for smooth scrolling
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollLinks = document.querySelectorAll('a[href^="#"]');
+            for (const link of scrollLinks) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

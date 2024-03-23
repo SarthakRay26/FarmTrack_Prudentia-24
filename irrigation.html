@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/275eb03ef9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Irrigation</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        body {
+    background-color: #F1F2EA;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.top{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Paytone One";
+}
+.paytone-one-regular {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rufina-regular {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rufina-bold {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+
+.soil-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.soil-heading {
+    flex: 1;
+    font-size: 25px;
+    font-family: "Paytone One";
+    margin-bottom: 25px;
+}
+
+.soil-content {
+    flex: 2;
+    padding-left: 30px; 
+    font-size: 20px;
+    font-family: "Rufina";
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.gap{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .soil-container {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+    .soil-heading,
+    .soil-content {
+        flex: none; /* Remove flex to allow full width for smaller screens */
+    }
+    .soil-heading,
+    .soil-content {
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+footer p {
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover {
+    color: white;
+}
+footer a strong {
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="landing.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+    </div>
+    <div class="top">
+        <h1>All about Irrigation</h1>
+    </div>
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Surface Irrigation</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Surface irrigation is one of the oldest and most widely used methods in India.
+                It involves flooding or channeling water over the soil surface, allowing it to infiltrate and reach the root zone of crops.
+                Common surface irrigation techniques include basin irrigation, furrow irrigation, and border irrigation.
+                Surface irrigation is suitable for a wide range of crops, especially in areas with flat terrain and abundant water supply.</p>
+
+        </div>
+    </div>
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>
+
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Drip Irrigation</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Drip irrigation is a water-efficient method that delivers water directly to the root zone of plants through a network of tubes, pipes, and emitters.
+                This system minimizes water wastage by delivering precise amounts of water to individual plants or crop rows, reducing evaporation and runoff.
+                Drip irrigation is particularly well-suited for areas with water scarcity, saline soils, or uneven terrain.
+                Although initial installation costs may be higher, drip irrigation can lead to significant water savings and improved crop yields over the long term.</p>
+
+        </div>
+
+    </div>
+
+<div>
+    <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+
+</div>
+
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Sprinkler Irrigation</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Sprinkler irrigation involves spraying water over the soil surface in the form of droplets, simulating natural rainfall.
+                Sprinkler systems consist of pipes, pumps, and sprinkler heads that distribute water evenly across the field.
+                This method is suitable for a wide range of crops, including field crops, fruits, vegetables, and nurseries.
+                Sprinkler irrigation is effective in areas with high wind speeds, sandy soils, or where water needs to be distributed over a large area.</p>
+
+        </div>
+    </div>
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>
+    
+    
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Subsurface Irrigation</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Subsurface irrigation involves delivering water directly to the root zone of plants through buried pipes, tubes, or porous materials installed below the soil surface.
+                This method minimizes water loss due to evaporation and runoff, as well as reduces weed growth and soil erosion.
+                Subsurface irrigation is suitable for crops with shallow root systems or in areas with waterlogging issues.
+                While installation costs may be higher, subsurface irrigation can improve water-use efficiency and crop yields, especially in regions with limited water resources.
+                </p>
+
+        </div>
+    </div>  
+
+    <div>
+        <hr style="width: 85%; border-top: 2px solid; color: #000000;">
+    
+    </div>     
+
+            
+    <div class="soil-container">
+        <div class="soil-heading">
+            <h1>Lift Irrigation</h1>
+
+        </div>
+
+        <div class="soil-content">
+            <p>Lift irrigation is a method of lifting water from a water source, such as a river, canal, or reservoir, to higher elevations using pumps or mechanical devices.
+                This system is commonly used in areas where natural water sources are located at lower elevations or where water needs to be transported over long distances.
+                Lift irrigation helps farmers access water for irrigation in areas with limited groundwater availability or during dry seasons.
+                While lift irrigation can be effective, it requires energy inputs for pumping water, which can increase operational costs for farmers.
+                </p>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy Declared in the welfare of <strong> Farmers</strong> | <strong>Team o7</strong></p>
+    </footer>
+
+</body>
+</html>

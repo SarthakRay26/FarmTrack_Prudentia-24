@@ -1,0 +1,28 @@
+
+
+.login-div{
+    background-color: lightgray;
+    border-radius: 10px;
+    align-items: center;
+   
+}
+
+.nav-item{
+    color: black;
+    padding-right: 50px;
+    
+}
+
+.logo-text{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+}
+
+.nav-text{
+    color: brown;
+}
+
+.add1{
+    border: solid black;
+}
