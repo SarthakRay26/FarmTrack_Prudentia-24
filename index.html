@@ -265,9 +265,23 @@
     </div>
 </body>
 <script>
-  const apiKey = "df1dcb436b034d1a9c2f9081fe7f7968";
-          const query = "farming agriculture India";
-          const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-02-24&sortBy=publishedAt&apiKey=${apiKey}`;
+
+  var today = new Date();
+                var m = today.getMonth();
+                var d = today.getDate();
+                var y = today.getFullYear();
+                m++;
+                m = checkTime(m);
+                d--;
+                d = checkTime(d);
+                var f = y + "-" + m + "-" + d;
+
+                const apiKey = "df1dcb436b034d1a9c2f9081fe7f7968";
+          const query = "Agricultural news in India";
+                const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=${f}&sortBy=publishedAt&apiKey=${apiKey}`;
+
+ 
+         
   
           // Function to fetch farming and agriculture-specific news data from India
           async function fetchFarmingAndAgricultureNews() {
@@ -321,6 +335,11 @@
                   newsContainer.textContent = "No news available.";
               }
           }
+
+          function checkTime(i) {
+                    if (i < 10) { i = "0" + i };
+                    return i;
+                }
   
           // Call the function to fetch farming and agriculture-specific news data and display it
           fetchFarmingAndAgricultureNews()
